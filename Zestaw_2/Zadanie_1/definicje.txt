@@ -1,0 +1,22 @@
+POLIMORFIZM DYNAMICZNY
+Możliwość decydowania o tym, jaka funkcja zostanie wywołana pod daną nazwą, nie w momencie kompilacji 
+(czyli pisania kodu), ale w samym momecie wywołania. Wymaga wspólnej hierarchii dziedziczenia, użycia
+wskaźników lub referencji oraz funkcji wirtualnych.
+
+
+POLIMORFIZM STATYCZNY
+Sytuacja, w której to kompilator decyduje (na etapie kompilacji), jaką funkcję wywołać na podstawie typu
+danych. W C++ realizuje się go poprzez przeciążanie funkcji, przeciążanie operatorów oraz szablony. Nie
+wymaga wspólnej hierarchii dziedziczenia ani funkcji wirtualnych.
+
+
+KLASA ABSTRAKCYJNA
+Klasa, z której nie można utworzyć obiektu. Stanowi jedynie bazę do dziedziczenia. W C++ jest nią każda
+klasa posiadająca co najmniej jedną czysto wirtualną funkcję (np. virtual void metoda() = 0;), co wymusza
+na klasach pochodnych dostarczenie własnej implementacji tej metody.
+
+
+FUNKCJA WIRTUALNA
+Metoda w klasie bazowej (poprzedzona słowem kluczowym virtual), która umożliwia działanie polimorfizmu 
+dynamicznego. Jej "czysta" (niezaimplementowana) wersja w klasie bazowej wymusza na klasach pochodnych
+dostarczenie własnej implementacji.
