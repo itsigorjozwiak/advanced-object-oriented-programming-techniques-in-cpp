@@ -14,9 +14,6 @@
 4. **Uogólnienie funkcji `sum` za pomocą `iterator_traits`**  
    Uogólnij funkcję `sum`, aby działała nie tylko ze wskaźnikami, ale i iteratorami. Widać, że tu użycie klas cech jest już niezbędne, musimy bowiem dowiedzieć się, na obiekty jakiego typu wskazuje iterator. Nie można do tego celu użyć typów stowarzyszonych `IT::value_type`, bo jako iterator może zostać podstawiony zwykły wskaźnik. Dlatego w STL istnieje klasa `iterator_traits`, definiująca podstawowe typy dla każdego rodzaju iteratora. Korzystając z tej klasy, zdefiniuj ogólny szablon funkcji `sum`.
 
-5. **Selekcja implementacji algorytmu na podstawie kategorii iteratora**  
-   Zapoznaj się z plikiem `kategorie.cpp` ([dostępnym tutaj](http://wazniak.mimuw.edu.pl/images/c/c4/Kategorie.cpp)). Jest w nim przedstawiony sposób selekcji jednej spośród kilku implementacji algorytmu na podstawie możliwości oferowanych przez przekazany iterator; w tym konkretnym przykładzie rozróżniamy dwie grupy: iteratory o swobodnym dostępie oraz wszystkie inne. Rozszerz kod tak, aby wybierana była jedna z trzech możliwości: swobodny dostęp, dwukierunkowe, gorsze niż dwukierunkowe.
-
 Do wykonania zadań wykorzystałem materiały zaczerpnięte z podanej niżej strony, implementując je w ich oryginalnej formie lub wprowadzając własne, delikatne modyfikacje, z zaznaczeniem, że prawa autorskie do pierwotnych treści należą do ich twórców.
 
 https://wazniak.mimuw.edu.pl/index.php?title=Zaawansowane_CPP/Wyk%C5%82ad_5:_Klasy_cech 
