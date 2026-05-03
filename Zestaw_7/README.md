@@ -23,7 +23,7 @@
    double inner(double *x, double *y);
    ```
 
-7. **Uniwersalny iloczyn skalarny**  
+6. **Uniwersalny iloczyn skalarny**  
    Rozszerz powyższy szablon tak, aby również typ elementów wektora był parametrem szablonu:  
    ```cpp
    template<size_t N, typename T>
